@@ -994,6 +994,8 @@ func clientHelloInfo(ctx context.Context, c *Conn, clientHello *clientHelloMsg) 
 	}
 
 	return &ClientHelloInfo{
+		Random: clientHello.random,
+		Test: "blabla",
 		CipherSuites:      clientHello.cipherSuites,
 		ServerName:        clientHello.serverName,
 		SupportedCurves:   clientHello.supportedCurves,
