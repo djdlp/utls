@@ -132,7 +132,7 @@ type Conn struct {
 
 func (c *Conn) Config() *Config {
 	return c.config
-
+}
 // LocalAddr returns the local network address.
 func (c *Conn) LocalAddr() net.Addr {
 	return c.conn.LocalAddr()
