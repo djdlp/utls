@@ -872,7 +872,7 @@ const (
 	// the actual MSS, to avoid complexity. The value here is the IPv6
 	// minimum MTU (1280 bytes) minus the overhead of an IPv6 header (40
 	// bytes) and a TCP header with timestamps (32 bytes).
-	tcpMSSEstimate = 1208
+	tcpMSSEstimate = 2000
 
 	// recordSizeBoostThreshold is the number of bytes of application data
 	// sent after which the TLS record size will be increased to the
